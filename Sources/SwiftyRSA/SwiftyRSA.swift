@@ -118,7 +118,7 @@ public enum SwiftyRSA {
     }
     
     @available(iOS 10.0, watchOS 3.0, tvOS 10.0, *)
-    static func generateRSAKeyPair(sizeInBits size: Int, applyUnitTestWorkaround: Bool = false) throws -> (privateKey: PrivateKey, publicKey: PublicKey) {
+    public static func generateRSAKeyPair(sizeInBits size: Int, applyUnitTestWorkaround: Bool = false) throws -> (privateKey: PrivateKey, publicKey: PublicKey) {
       
         guard let tagData = UUID().uuidString.data(using: .utf8) else {
             throw SwiftyRSAError.stringToDataConversionFailed
