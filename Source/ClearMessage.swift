@@ -159,8 +159,7 @@ public class ClearMessage: Message {
     }
     
     func digest(digestType: Signature.DigestType) -> Data {
-        
-        let digest: Data
+        let digest: NSData
         
         switch digestType {
         case .sha1:
@@ -175,6 +174,6 @@ public class ClearMessage: Message {
             digest = (data as NSData).swiftyRSASHA512()
         }
         
-        return digest
+        return digest as Data
     }
 }
