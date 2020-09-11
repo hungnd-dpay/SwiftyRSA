@@ -202,10 +202,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93F299DFFB42687BDAA5C1E7ADCC955B /* Source */ = {
+		6493AAC0250B12CE00277D45 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96EA18F422C03E377636BC2399DDD2C7 /* Supporting Files */,
+				C0579232215464E20057F401 /* Info-tvOS.plist */,
+				1CB44E2E8BE22C702325440A0F96410A /* SwiftyRSA.h */,
+				7DF0A3222330CDFCF12918ED08519EB9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6493AAC1250B12F600277D45 /* SwiftyRSA */ = {
+			isa = PBXGroup;
+			children = (
+				38E84F551B29670A456D12366AA4C8E5 /* SwiftyRSA.swift */,
 				C0E83E081ECD7F3000E9D63C /* ClearMessage.swift */,
 				C034317A1EC2D7E30019B7E8 /* Asn1Parser.swift */,
 				C0E83E0C1ECD7F4200E9D63C /* EncryptedMessage.swift */,
@@ -215,21 +225,19 @@
 				C0E83E041ECD7DC400E9D63C /* PrivateKey.swift */,
 				C0E83DFC1ECD7DA300E9D63C /* PublicKey.swift */,
 				C096A00B1D90754E00E285C2 /* Signature.swift */,
-				38E84F551B29670A456D12366AA4C8E5 /* SwiftyRSA.swift */,
 				C06A33DA1E6E815A000EE6DC /* SwiftyRSA+ObjC.swift */,
 				C03AF73D1ECAB2FC00DE8166 /* SwiftyRSAError.swift */,
 			);
-			path = Source;
+			path = SwiftyRSA;
 			sourceTree = "<group>";
 		};
-		96EA18F422C03E377636BC2399DDD2C7 /* Supporting Files */ = {
+		93F299DFFB42687BDAA5C1E7ADCC955B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C0579232215464E20057F401 /* Info-tvOS.plist */,
-				1CB44E2E8BE22C702325440A0F96410A /* SwiftyRSA.h */,
-				7DF0A3222330CDFCF12918ED08519EB9 /* Info.plist */,
+				6493AAC0250B12CE00277D45 /* Supporting Files */,
+				6493AAC1250B12F600277D45 /* SwiftyRSA */,
 			);
-			name = "Supporting Files";
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		C076F53E1DADEB90006AF5DB /* Tests */ = {
@@ -270,7 +278,7 @@
 			children = (
 				2E9BA9B6A0F26B6E10630895F0FF31B0 /* Linked Frameworks */,
 				345E780D70779A01AA3BAA5CB4CE6558 /* Products */,
-				93F299DFFB42687BDAA5C1E7ADCC955B /* Source */,
+				93F299DFFB42687BDAA5C1E7ADCC955B /* Sources */,
 				C076F53E1DADEB90006AF5DB /* Tests */,
 			);
 			sourceTree = "<group>";
@@ -634,7 +642,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -720,7 +728,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -755,7 +763,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
@@ -788,7 +796,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-tvOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -822,7 +830,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info-tvOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_FAST_MATH = YES;
@@ -1007,7 +1015,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
